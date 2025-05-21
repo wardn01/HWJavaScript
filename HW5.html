@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- task#1 -->
+    <div
+      id="hoverBox"
+      onmouseover="changeColor()"
+      style="width: 100px; height: 100px; background-color: gray"
+    ></div>
+
+    <script>
+      function changeColor() {
+        document.getElementById("hoverBox").style.backgroundColor = "orange";
+      }
+    </script>
+
+    <!-- task#2 -->
+    <div
+      id="hoverBox0"
+      onmouseover="changeColor0()"
+      onmouseout="resetColor0()"
+      style="
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+      "
+    ></div>
+
+    <script>
+      function changeColor0() {
+        document.getElementById("hoverBox0").style.backgroundColor = "orange";
+      }
+      function resetColor0() {
+        document.getElementById("hoverBox0").style.backgroundColor = "gray";
+      }
+    </script>
+
+    <!-- task#3 -->
+    <button style="margin-top: 50px" id="clickBtn">To++</button>
+    <p>Clicked: <span id="clickCount">0</span> times</p>
+
+    <script>
+      const clickBtn = document.getElementById("clickBtn");
+      const clickCount = document.getElementById("clickCount");
+
+      let count = 0;
+      clickBtn.addEventListener("click", function () {
+        count++;
+        clickCount.textContent = count;
+      });
+    </script>
+  </body>
+</html>
