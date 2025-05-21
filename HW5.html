@@ -16,12 +16,6 @@
       style="width: 100px; height: 100px; background-color: gray"
     ></div>
 
-    <script>
-      function changeColor() {
-        document.getElementById("hoverBox").style.backgroundColor = "orange";
-      }
-    </script>
-
     <!-- task#2 -->
     <div
       id="hoverBox0"
@@ -35,20 +29,25 @@
       "
     ></div>
 
+    <!-- task#3 -->
+    <button style="margin-top: 50px" id="clickBtn">To++</button>
+    <p>Clicked: <span id="clickCount">0</span> times</p>
+
     <script>
+      //task#1
+      function changeColor() {
+        document.getElementById("hoverBox").style.backgroundColor = "orange";
+      }
+
+      //task#2
       function changeColor0() {
         document.getElementById("hoverBox0").style.backgroundColor = "orange";
       }
       function resetColor0() {
         document.getElementById("hoverBox0").style.backgroundColor = "gray";
       }
-    </script>
 
-    <!-- task#3 -->
-    <button style="margin-top: 50px" id="clickBtn">To++</button>
-    <p>Clicked: <span id="clickCount">0</span> times</p>
-
-    <script>
+      //task#3
       const clickBtn = document.getElementById("clickBtn");
       const clickCount = document.getElementById("clickCount");
 
