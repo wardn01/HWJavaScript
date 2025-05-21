@@ -1,3 +1,5 @@
+//ורד נגאר 325523017 
+//מוחמד ריאן 327640835
 //task#1
 const addExclamation = (str) => str + "!";
 
