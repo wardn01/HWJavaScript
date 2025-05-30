@@ -1,3 +1,7 @@
+//ורד נגאר 325523017 
+//מוחמד ריאן 327640835
+// 'use strict';
+
 const reviewText = document.getElementById("review-text");
 const toggleBtn = document.getElementById("toggle-review");
 
